@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amara - Upscale Fine Dining Restaurant offering modern cuisine and a timeless culinary experience. Book your reservation today.">
+  <title>Amara | Modern Cuisine, Timeless Experience</title>
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Header & Navigation -->
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#home" class="nav-logo" id="logo-link">AMARA<span>.</span></a>
+        
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Story</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#reservations" class="nav-link">Reservations</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-subtitle">Welcome to Amara</p>
+      <h1 class="hero-title">Modern Cuisine, <br><span>Timeless Experience</span></h1>
+      <p class="hero-tagline">Indulge in a curated journey of seasonal flavors crafted by culinary artisans.</p>
+      <a href="#reservations" class="btn-premium">Reserve a Table</a>
+    </div>
+  </section>
+
+  <!-- About/Story Section -->
+  <section id="story" class="section-padding">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-content reveal">
+          <span class="section-subtitle">Our Philosophy</span>
+          <h2 class="section-title">A Symphony of Taste</h2>
+          <div class="story-text">
+            <p>At Amara, we believe dining is more than just a meal; it is a shared ritual of discovery. Established in the heart of the culinary district, Amara brings a contemporary vision to classical fine dining.</p>
+            <p>Under the stewardship of Chef de Cuisine Marco V., our kitchen honors ancestral techniques while embracing the forefront of gastronomic innovation. We collaborate closely with local biodynamic farms and sustainable fisheries to ensure every plate tells a story of origin, freshness, and uncompromising craftsmanship.</p>
+          </div>
+          <div class="story-stats">
+            <div class="stat-item">
+              <div class="stat-number">08+</div>
+              <div class="stat-label">Years of Harmony</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">02</div>
+              <div class="stat-label">Michelin Stars</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Organic Partners</div>
+            </div>
+          </div>
+        </div>
+        <div class="story-image-wrapper reveal delay-2">
+          <img src="assets/chef-story.png" alt="Chef Marco plating an upscale dish" class="story-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-subtitle">The Gastronomy</span>
+        <h2 class="section-title">The Culinary Menu</h2>
+      </div>
+
+      <!-- Category Tabs Toggle -->
+      <ul class="menu-tabs reveal">
+        <li><button class="menu-tab-btn active" data-target="starters">Starters</button></li>
+        <li><button class="menu-tab-btn" data-target="mains">Mains</button></li>
+        <li><button class="menu-tab-btn" data-target="desserts">Desserts</button></li>
+        <li><button class="menu-tab-btn" data-target="drinks">Cocktails</button></li>
+      </ul>
+
+      <!-- Menu Panes Container -->
+      <div class="menu-container reveal delay-1">
+        <!-- Starters -->
+        <div class="menu-pane active" id="starters">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Paneer Mille-Feuille Tikka<span class="diet-badges"><span class="diet-badge" title="Vegetarian">V</span><span class="diet-badge" title="Gluten-Free">GF</span></span></h3>
+              <span class="menu-item-price">₹450</span>
+            </div>
+            <p class="menu-item-desc">Layered organic cottage cheese, saffron marinade, mint-coriander emulsion.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Crispy Dahi Ke Kabab<span class="diet-badges"><span class="diet-badge" title="Vegetarian">V</span></span></h3>
+              <span class="menu-item-price">₹420</span>
+            </div>
+            <p class="menu-item-desc">Spiced yogurt patties, cardamom dust, beetroot gel, gold leaf decoration.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Truffle Malai Broccoli<span class="diet-badges"><span class="diet-badge" title="Vegetarian">V</span><span class="diet-badge" title="Gluten-Free">GF</span></span></h3>
+              <span class="menu-item-price">₹480</span>
+            </div>
+            <p class="menu-item-desc">Tandoor-roasted broccoli florets, creamy truffle-cardamom glaze.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Jackfruit Galouti Kebab<span class="diet-badges"><span class="diet-badge" title="Vegetarian">V</span><span class="diet-badge" title="Vegan">VG</span></span></h3>
+              <span class="menu-item-price">₹520</span>
+            </div>
+            <p class="menu-item-desc">Melt-in-mouth spiced jackfruit, saffron paratha crisp, pickled onion relish.</p>
+          </div>
+        </div>
+
+        <!-- Mains -->
+        <div class="menu-pane" id="mains">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Sous-Vide Butter Chicken<span class="diet-badges"><span class="diet-badge signature" title="Chef's Signature">★</span><span class="diet-badge" title="Gluten-Free">GF</span></span></h3>
+              <span class="menu-item-price">₹850</span>
+            </div>
+            <p class="menu-item-desc">Tender chicken breast, rich smoked tomato gravy, butter emulsion, fenugreek dust.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Dal Amara<span class="diet-badges"><span class="diet-badge signature" title="Chef's Signature">★</span><span class="diet-badge" title="Vegetarian">V</span><span class="diet-badge" title="Gluten-Free">GF</span></span></h3>
+              <span class="menu-item-price">₹650</span>
+            </div>
+            <p class="menu-item-desc">24-hour slow-cooked black lentils, churned white butter, organic cream, charcoal smoke.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Nalli Nihari<span class="diet-badges"><span class="diet-badge signature" title="Chef's Signature">★</span></span></h3>
+              <span class="menu-item-price">₹1,150</span>
+            </div>
+            <p class="menu-item-desc">Slow-cooked lamb shanks, aromatic bone broth, ginger juliennes, saffron-rose water glaze.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Jackfruit Dum Biryani<span class="diet-badges"><span class="diet-badge" title="Vegetarian">V</span></span></h3>
+              <span class="menu-item-price">₹780</span>
+            </div>
+            <p class="menu-item-desc">Basmati rice layered with spiced jackfruit, caramelized onions, saffron, mint, cooked under puff-pastry veil.</p>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-pane" id="desserts">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Deconstructed Shahi Tukda<span class="diet-badges"><span class="diet-badge signature" title="Chef's Signature">★</span><span class="diet-badge" title="Vegetarian">V</span></span></h3>
+              <span class="menu-item-price">₹350</span>
+            </div>
+            <p class="menu-item-desc">Saffron-infused rabri, gold leaf, caramelized brioche, pistachio crumble.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Saffron &amp; Rose Rasmalai<span class="diet-badges"><span class="diet-badge" title="Vegetarian">V</span></span></h3>
+              <span class="menu-item-price">₹320</span>
+            </div>
+            <p class="menu-item-desc">Soft cottage cheese dumplings, rose water-infused milk, almond slivers.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Elaneer Payasam<span class="diet-badges"><span class="diet-badge" title="Vegetarian">V</span><span class="diet-badge" title="Vegan">VG</span><span class="diet-badge" title="Gluten-Free">GF</span></span></h3>
+              <span class="menu-item-price">₹340</span>
+            </div>
+            <p class="menu-item-desc">Tender coconut pudding, palm jaggery caramel, toasted coconut shavings.</p>
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-pane" id="drinks">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Saffron Cardamom Old Fashioned<span class="diet-badges"><span class="diet-badge signature" title="Chef's Signature">★</span><span class="diet-badge" title="Vegan">VG</span><span class="diet-badge" title="Gluten-Free">GF</span></span></h3>
+              <span class="menu-item-price">₹650</span>
+            </div>
+            <p class="menu-item-desc">Aged bourbon, saffron syrup, cardamom bitters, orange peel, cedar smoke finish.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Tamarind Margarita<span class="diet-badges"><span class="diet-badge" title="Vegan">VG</span><span class="diet-badge" title="Gluten-Free">GF</span></span></h3>
+              <span class="menu-item-price">₹550</span>
+            </div>
+            <p class="menu-item-desc">Premium tequila, tamarind nectar, lime juice, spicy chili-salt rim.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Rose Petal &amp; Lychee Martini<span class="diet-badges"><span class="diet-badge" title="Vegan">VG</span><span class="diet-badge" title="Gluten-Free">GF</span></span></h3>
+              <span class="menu-item-price">₹600</span>
+            </div>
+            <p class="menu-item-desc">Premium vodka, lychee juice, organic rose water infusion, edible rose petals.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Legend -->
+      <div class="menu-legend reveal delay-2">
+        <span class="legend-item"><span class="diet-badge" aria-hidden="true">V</span> Vegetarian</span>
+        <span class="legend-item"><span class="diet-badge" aria-hidden="true">VG</span> Vegan</span>
+        <span class="legend-item"><span class="diet-badge" aria-hidden="true">GF</span> Gluten-Free</span>
+        <span class="legend-item"><span class="diet-badge signature" aria-hidden="true">★</span> Chef's Signature</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-subtitle">Visual Journey</span>
+        <h2 class="section-title">Moments at Amara</h2>
+      </div>
+
+      <!-- Masonry/Grid Layout -->
+      <div class="gallery-grid reveal delay-1">
+        
+        <!-- Image 1 -->
+        <div class="gallery-item col-4" data-index="0" data-src="assets/gallery-starter.png" data-title="Paneer Mille-Feuille Tikka" data-category="Starters">
+          <img src="assets/gallery-starter.png" alt="Starter: Paneer Mille-Feuille Tikka">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-maximize"></i></div>
+            <h4 class="gallery-overlay-title">Paneer Mille-Feuille Tikka</h4>
+            <span class="gallery-overlay-category">Starters</span>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="gallery-item col-8 aspect-wide" data-index="1" data-src="assets/gallery-main.png" data-title="Sous-Vide Butter Chicken" data-category="Mains">
+          <img src="assets/gallery-main.png" alt="Main: Sous-Vide Butter Chicken">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-maximize"></i></div>
+            <h4 class="gallery-overlay-title">Sous-Vide Butter Chicken</h4>
+            <span class="gallery-overlay-category">Mains</span>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="gallery-item col-6" data-index="2" data-src="assets/gallery-ambiance.png" data-title="The Main Dining Room" data-category="Ambiance">
+          <img src="assets/gallery-ambiance.png" alt="Interior: The Main Dining Room">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-maximize"></i></div>
+            <h4 class="gallery-overlay-title">The Main Dining Room</h4>
+            <span class="gallery-overlay-category">Ambiance</span>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="gallery-item col-6" data-index="3" data-src="assets/gallery-drink.png" data-title="Saffron Cardamom Old Fashioned" data-category="Cocktails">
+          <img src="assets/gallery-drink.png" alt="Beverage: Saffron Cardamom Old Fashioned">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-maximize"></i></div>
+            <h4 class="gallery-overlay-title">Saffron Cardamom Old Fashioned</h4>
+            <span class="gallery-overlay-category">Cocktails</span>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="gallery-item col-12 aspect-wide" data-index="4" data-src="assets/gallery-dessert.png" data-title="Deconstructed Shahi Tukda" data-category="Desserts">
+          <img src="assets/gallery-dessert.png" alt="Dessert: Deconstructed Shahi Tukda">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-maximize"></i></div>
+            <h4 class="gallery-overlay-title">Deconstructed Shahi Tukda</h4>
+            <span class="gallery-overlay-category">Desserts</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-subtitle">Guest Reflections</span>
+        <h2 class="section-title">The Guest Experience</h2>
+      </div>
+
+      <div class="testimonials-carousel-wrapper reveal delay-1">
+        <button class="carousel-control prev" id="testimonials-prev" aria-label="Previous review">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="testimonials-slider-container">
+          <div class="testimonials-track" id="testimonials-track">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide active">
+              <div class="testimonial-card">
+                <span class="quote-icon">“</span>
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"An absolute masterpiece of flavors. The sous-vide butter chicken literally melted in my mouth, and the atmosphere is simply unmatched. Amara has set a new standard for fine dining."</p>
+                <div class="testimonial-author">
+                  <span class="author-name">Sarah Jenkins</span>
+                  <span class="author-role">Food Critic, The Daily Culinary</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <span class="quote-icon">“</span>
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"From the transparent ease of reservations to the final bite of the shahi tukda, everything was flawless. The staff's attention to detail is truly Michelin-worthy."</p>
+                <div class="testimonial-author">
+                  <span class="author-name">David K.</span>
+                  <span class="author-role">Hospitality Consultant</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <span class="quote-icon">“</span>
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"We celebrated our anniversary at Amara and it was unforgettable. The cocktail pairings are ingenious. A must-visit culinary sanctuary in the city."</p>
+                <div class="testimonial-author">
+                  <span class="author-name">Elena &amp; Robert L.</span>
+                  <span class="author-role">Loyal Patrons</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control next" id="testimonials-next" aria-label="Next review">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="testimonials-dots" id="testimonials-dots">
+          <button class="dot active" data-slide="0" aria-label="Go to review 1"></button>
+          <button class="dot" data-slide="1" aria-label="Go to review 2"></button>
+          <button class="dot" data-slide="2" aria-label="Go to review 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservations Section -->
+  <section id="reservations" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-subtitle">Reservations</span>
+        <h2 class="section-title">Secure Your Table</h2>
+      </div>
+
+      <div class="reservation-form-container reveal delay-1">
+        <div class="reservation-intro">
+          <p>We welcome you to experience Amara. Please complete the reservation form below. For groups larger than 8, kindly contact our events team directly.</p>
+        </div>
+
+        <form class="res-form" id="reservation-form" novalidate>
+          <!-- Name -->
+          <div class="form-group">
+            <label for="res-name" class="form-label">Full Name</label>
+            <input type="text" id="res-name" class="form-input" placeholder="Your Name" required>
+            <span class="error-message" id="name-error">Please enter your name</span>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="res-email" class="form-label">Email Address</label>
+            <input type="email" id="res-email" class="form-input" placeholder="you@example.com" required>
+            <span class="error-message" id="email-error">Please enter a valid email address</span>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="res-phone" class="form-label">Phone Number</label>
+            <input type="tel" id="res-phone" class="form-input" placeholder="(555) 000-0000" required>
+            <span class="error-message" id="phone-error">Please enter a valid 10-digit phone number</span>
+          </div>
+
+          <!-- Party Size -->
+          <div class="form-group">
+            <label for="res-size" class="form-label">Party Size</label>
+            <select id="res-size" class="form-input" required>
+              <option value="" disabled selected>Select Guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7">7 Guests</option>
+              <option value="8">8 Guests (Large Group)</option>
+            </select>
+            <span class="error-message" id="size-error">Please select party size</span>
+          </div>
+
+          <!-- Date -->
+          <div class="form-group">
+            <label for="res-date" class="form-label">Date</label>
+            <input type="date" id="res-date" class="form-input" required>
+            <span class="error-message" id="date-error">Please choose a future date</span>
+          </div>
+
+          <!-- Time -->
+          <div class="form-group">
+            <label for="res-time" class="form-label">Preferred Time</label>
+            <select id="res-time" class="form-input" required>
+              <option value="" disabled selected>Select Time</option>
+              <option value="17:00">5:00 PM</option>
+              <option value="17:30">5:30 PM</option>
+              <option value="18:00">6:00 PM</option>
+              <option value="18:30">6:30 PM</option>
+              <option value="19:00">7:00 PM</option>
+              <option value="19:30">7:30 PM</option>
+              <option value="20:00">8:00 PM</option>
+              <option value="20:30">8:30 PM</option>
+              <option value="21:00">9:00 PM</option>
+              <option value="21:30">9:30 PM</option>
+              <option value="22:00">10:00 PM</option>
+            </select>
+            <span class="error-message" id="time-error">Please select dinner time</span>
+          </div>
+
+          <!-- Special Requests -->
+          <div class="form-group form-group-full">
+            <label for="res-requests" class="form-label">Dietary Notes &amp; Special Requests</label>
+            <textarea id="res-requests" class="form-input" placeholder="Allergies, anniversaries, window seating preferences..."></textarea>
+          </div>
+
+          <!-- Submit CTA -->
+          <div class="form-submit-wrapper">
+            <button type="submit" class="btn-premium btn-submit">Submit Booking</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location/Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-subtitle">Find Us</span>
+        <h2 class="section-title">Hours &amp; Location</h2>
+      </div>
+
+      <div class="contact-grid reveal delay-1">
+        <!-- Contact details column -->
+        <div class="contact-info-panel">
+          <div>
+            <div class="contact-card">
+              <h3 class="contact-card-title">Location</h3>
+              <div class="contact-card-content">
+                <p>482 Gourmet Boulevard</p>
+                <p>Culinary District, NY 10001</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <h3 class="contact-card-title">Hours of Operations</h3>
+              <div class="contact-card-content">
+                <p><strong>Tuesday – Sunday:</strong> 5:00 PM – 11:00 PM</p>
+                <p><strong>Monday:</strong> Closed</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <h3 class="contact-card-title">Inquiries</h3>
+              <div class="contact-card-content">
+                <p><strong>Phone:</strong> +1 (212) 555-0199</p>
+                <p><strong>Email:</strong> <a href="mailto:reservations@amaranyc.com">reservations@amaranyc.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div>
+            <span class="form-label" style="display: block; margin-bottom: 1rem;">Connect With Us</span>
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded Map styling -->
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6175398246473!2d-73.98884632342618!3d40.749940371388334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus" 
+            class="map-iframe" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Amara NYC Location Map">
+          </iframe>
+          <div class="map-overlay">
+            <h4 class="map-overlay-title">Amara NYC</h4>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="map-overlay-link">
+              Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 5px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand identity -->
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">AMARA<span>.</span></a>
+          <p>Redefining contemporary fine dining through ancestral heritage, artisanal seasonal ingredients, and structural modern culinary expression.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3 class="footer-title">Navigation</h3>
+          <ul class="footer-links-list">
+            <li class="footer-link"><a href="#home">Home</a></li>
+            <li class="footer-link"><a href="#story">Story</a></li>
+            <li class="footer-link"><a href="#menu">Menu</a></li>
+            <li class="footer-link"><a href="#gallery">Gallery</a></li>
+            <li class="footer-link"><a href="#testimonials">Reviews</a></li>
+            <li class="footer-link"><a href="#reservations">Reservations</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="footer-newsletter">
+          <h3 class="footer-title">Newsletter</h3>
+          <p>Subscribe to receive exclusive invitations to seasonal culinary tasting events and chef menus.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Newsletter email">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 AMARA. All rights reserved.</p>
+        <ul class="footer-bottom-links">
+          <li class="footer-bottom-link"><a href="#">Privacy Policy</a></li>
+          <li class="footer-bottom-link"><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image gallery lightbox">
+    <button class="lightbox-btn lightbox-close" id="lightbox-close" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+    
+    <div class="lightbox-content-wrapper">
+      <img src="" alt="" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption">Image Title</div>
+    </div>
+    
+    <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Confirmation Modal Overlay -->
+  <div class="modal-overlay" id="confirmation-modal" aria-hidden="true" role="dialog" aria-label="Booking Confirmation">
+    <div class="modal-card">
+      <div class="modal-icon"><i class="fa-solid fa-check"></i></div>
+      <h3 class="modal-title">Booking Secured</h3>
+      <p class="modal-text" id="modal-message">Your reservation at Amara has been successfully registered. A confirmation details email has been sent to your inbox.</p>
+      <button class="btn-premium" id="close-modal-btn">Dismiss</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Custom Trailing Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+  <!-- Custom JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
